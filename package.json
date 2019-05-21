@@ -1,0 +1,23 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iliyani6e/natours.git"
+  },
+  "author": "Stefanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iliyani6e/natours/issues"
+  },
+  "homepage": "https://github.com/Iliyani6e/natours#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
