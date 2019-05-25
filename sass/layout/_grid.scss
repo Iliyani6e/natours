@@ -13,8 +13,8 @@
     //the simbol ^= selects all the elements that have a class that starts with "col-"
     [class^="col-"] {
         float: left;
-        background: orangered;
-        height: 5rem;
+
+
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
