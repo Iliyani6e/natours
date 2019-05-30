@@ -5,3 +5,11 @@
         clear: both;
     }
 }
+
+@mixin backface-visibility ($visibility:hidden) {
+    backface-visibility: $visibility;
+    -webkit-backface-visibility: $visibility;
+    -moz-backface-visibility: $visibility;
+    -ms-backface-visibility: $visibility;
+    -o-backface-visibility: $visibility;
+}
