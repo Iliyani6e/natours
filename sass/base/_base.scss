@@ -7,9 +7,29 @@
 }
 
 html {
+    //1rem = 20px default 
     // This defines what one rem is.
-    font-size: 50%;
+    font-size: 50%; //1rem = 10px
+
+
+    @include respond(big-desktop) {
+        font-size: 62.5%; // 1rem = 16px  10/16= 62.5%
+    }
+
+    @include respond(tab-land) {
+        font-size: 45%; // 1rem = 0.45*20 = 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 40%; // 1rem = 8px
+    }
+
+    @include respond(phone) {
+        font-size: 40%; //1rem = 8px
+    }
+
 }
+
 
 body {
 
