@@ -32,6 +32,14 @@ html {
 
 
 body {
-
+    padding: 3rem;
     box-sizing: border-box;
+
+    @include respond(tab-port) {
+        padding: 0; // 1rem = 8px
+    }
+
+    @include respond(phone) {
+        padding: 0; //1rem = 8px
+    }
 }

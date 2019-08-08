@@ -28,13 +28,13 @@
 // 1200 - 1800px Desktop
 // 1800 ++  Big screen Desctops
 
-@mixin respond-phone {
-    @media (max-width: 600px) {
-        @content
-    }
+// @mixin respond-phone {
+//     @media (max-width: 600px) {
+//         @content
+//     }
 
-    ;
-}
+//     ;
+// }
 
 
 // $breakpoint argument choices:
