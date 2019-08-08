@@ -104,7 +104,7 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485); }
   @media (max-width: 45em) {
     .heading-secondary {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
   @media (max-width: 30em) {
     .heading-secondary {
       font-size: 2.5rem; } }
@@ -528,7 +528,7 @@ body {
 .popup {
   background: rgba(119, 119, 119, 0.8);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -552,17 +552,52 @@ body {
     transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
     transition: all .5s .2s; }
+    @media (max-width: 45em) {
+      .popup__content {
+        display: block;
+        height: 90%; } }
   .popup__left {
     width: 33.333333333%;
     display: table-cell; }
+    @media (max-width: 45em) {
+      .popup__left {
+        display: inline;
+        height: 33.33333%; } }
   .popup__right {
-    width: 66.66666666;
+    width: 66.66666666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 45em) {
+      .popup__right {
+        width: 100%;
+        height: 100%; } }
+    @media (max-width: 30em) {
+      .popup__right h2 {
+        letter-spacing: 0;
+        font-size: 2rem; } }
+    @media (max-width: 30em) {
+      .popup__right h3 {
+        letter-spacing: 0;
+        font-size: 1.2rem; } }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
+    @media (max-width: 30em) {
+      .popup__img:first-child {
+        display: none; } }
+    @media (max-width: 45em) {
+      .popup__img {
+        display: inline;
+        width: 49.8%;
+        height: 33.333333%;
+        overflow: hidden;
+        box-sizing: border-box;
+        transform: scale(1.1); } }
+    @media (max-width: 30em) {
+      .popup__img {
+        width: 100%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -575,6 +610,11 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 45em) {
+      .popup__text {
+        -webkit-column-count: 1;
+        column-count: 1;
+        font-size: 1.2rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -789,8 +829,8 @@ body {
   z-index: 2000; }
   @media (max-width: 45em) {
     .navigation__button {
-      right: 3.5rem;
-      top: 3.5rem; } }
+      right: 4rem;
+      top: 4rem; } }
 
 .navigation__background {
   height: 6rem;
