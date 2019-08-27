@@ -92,6 +92,31 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
+              <!-- the "sizes" attribute is used to set the approximte `width of the image on different viewport widths so together with the "300w" and the "1000w" (which are width descriptors) the browser desides which image to display  -->
+              <!-- basically it is a list of breakpoints -->
+                <img
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                alt="nature photo"
+                sizes="(max-width:900px) 18vw, (max-width:600px) 27vw, 300px"
+                src="img/nat-1-large.jpg"
+                class="composition__photo composition__photo--p1"
+              />
+             
+              <img
+              srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+              alt="nature photo"
+              sizes="(max-width:900px) 18vw, (max-width:600px) 27vw, 300px"
+              src="img/nat-2-large.jpg"
+              class="composition__photo composition__photo--p2"
+            />
+            <img
+            srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+            alt="nature photo"
+            sizes="(max-width:900px) 18vw, (max-width:600px) 27vw, 300px"
+            src="img/nat-3-large.jpg"
+            class="composition__photo composition__photo--p3"
+          />
+<!-- 
               <img
                 src="img/nat-1-large.jpg"
                 alt="nature photo"
@@ -106,7 +131,7 @@
                 src="img/nat-3-large.jpg"
                 alt=""
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -412,12 +437,20 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo-box">
-        <img
-          src="/img/logo-green-2x.png"
-          alt="Full size logo"
-          class="footer__logo"
-        />
+      <div class="footer__logo-box">`
+
+        <!--  responsive footer logo using art direction (change the image on different resolutions) "1x" and "2x" are density descriptors which are showing the DPI (device pixel raio) of the screen -->
+        <!-- in the source element can be set media queries to choose which image to be displayed on smaller screen sizes   -->
+        <!-- there can be more than one source element inside of the picture element -->
+        <picture class="footer__logo">
+          <source srcset="/img/logo-green-small-1x.png 1x, /img/logo-green-small-2x.png 2x" media="(max-width: 30em)">
+            <img
+            srcset="/img/logo-green-1x.png 1x, /img/logo-green-2x.png 2x"
+            src="/img/logo-green-2x.png"
+            alt="Full size logo"
+          />
+        </picture>
+        
       </div>
       <div class="row">
         <div class="col-1-of-2">
