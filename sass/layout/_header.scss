@@ -10,9 +10,9 @@
 
     // 1em is 20px here
     //if the screen size is more then 30em (600px) and the resolution is more than 192dpi (dots per inch) or the screen width is more than 100em (200px), then the bigger image will be displayed
-    @media (min-resolution: 192dpi) and (min-width:30em),
-    (-webkit-device-pixel-ratio:2) and (min-width:30em),
-    (min-width:100em) {
+    @media only screen and (min-resolution: 192dpi) and (min-width:30em),
+    only screen and (-webkit-device-pixel-ratio:2) and (min-width:30em),
+    only screen and (min-width:100em) {
         background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.7),
                 rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
     }
