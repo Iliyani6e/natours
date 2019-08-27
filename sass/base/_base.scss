@@ -43,3 +43,10 @@ body {
         padding: 0; //1rem = 8px
     }
 }
+
+
+// ::selection selector sets the style of selected text in the website
+::selection {
+    background: $color-primary;
+    color: $color-white;
+}
